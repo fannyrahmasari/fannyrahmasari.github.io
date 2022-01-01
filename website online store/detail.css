@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'comic sans ms', sans-serif;
+  background-color: #ffff;
+  background-size: cover;
+}
+
+.container {
+  font-family: 'comic sans ms', sans-serif;
+  background-color: #faf6f6;
+  height: 550px;
+  width: 1000px;
+  margin: 90px auto;
+  display: flex;
+  padding: 30px;
+}
+
+.container .gambar img {
+  width: 300px;
+}
+
+.deskripsi p {
+  padding: 30px;
+}
+
+.deskripsi ul {
+  padding: 30px;
+}
+
+.deskripsi button {
+  background-color: rgb(188, 188, 233);
+  padding: 7px;
+}
