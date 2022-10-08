@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery Add/Remove Class for SPA Menu</title>
+	<link rel="stylesheet" href="addremoveclass.css">
+	<script src="../p03-table-jquery/jquery.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<nav>
+		<ul>
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about" class="active">About</a></li>
+			<li><a href="#contac" class="active">Contact</a></li>
+		</ul>
+   </nav>
+
+   <div id="konten">
+	<div id="isikonten">
+		<div id="home" class="isi__1">
+			<center><b>Halaman Home</b></center> <br> <br>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque minus eius repellendus sit iusto ab error architecto natus illo nihil, nisi earum laudantium culpa quo repellat? Debitis, voluptates a!
+		</div>
+		<div id="about" class="isi__2">
+			<center><b>Halo Nama saya Fanny Rahmasari <br> dengan NIM 41215376</b></center> <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div id="contac" class="isi__3">
+			<center><b>Kita dapat berkomunikasi lewat:</b> <br>1. whatsapp <br>2. instagram <br> 3.email</center> <br> <br> 
+		</div>
+		<div id="project" class="isi__4">
+			<center><b>Untuk project akan menyusul ya, ehehe</b> </center><br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+<script>
+
+$(document).ready(function() {
+    var currentSection = 0;
+    $('#konten').hide();
+    $('ul li a').click(function() {       
+      
+      $('ul li a').removeClass('active');
+      $(this).addClass('active');
+      
+      var href = $(this).attr('href');
+      $('#isikonten>div').hide();
+      
+      $(href).show();
+            
+      if(currentSection == 0){
+          $('#konten').slideToggle(200);
+          currentSection = href;
+      }else if(currentSection == href){
+           $('#konten').slideToggle(200);
+           currentSection = 0;    
+      }else{
+          currentSection = href;
+      }
+      return false;
+  });
+});
+
+</script>
+
+</body>
+</html>
