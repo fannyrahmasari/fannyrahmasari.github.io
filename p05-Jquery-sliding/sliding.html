@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery Sliding</title>
+    <script src="slidingjquery.js"></script>
+    <script ssrc="sliding.js"></script>
+    <link rel="stylesheet" href="sliding.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="togglethis">Click Here</div>
+    <div id="content">Hallo, Perkenalkan Saya Fanny Rahmasari</div>
+    <div id="back"><a href="../index.html">Back</a></div>
+</div>
+
+<script>
+    $(function () {
+        $('#togglethis').click(function () {
+            $('#content').slideToggle(300);
+        });
+    });
+</script>
+</body>
+</html>
