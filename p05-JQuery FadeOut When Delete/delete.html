@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,4 +100,107 @@
 </body>
 </html>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery FadeOut When Delete</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Teman (jquery)</title>
+    <link rel="stylesheet" href="delete.css">
+    <script type="text/javascript" src="delete.js"></script>
+</head>
+<body>
+
+<div class="content">
+    
+    <h1>The Top 10 My Best Friends</h1>
+
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Aksi</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="nama">Indra Ikhsani</td>
+            <td class="alamat">Lemahabang</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="nama">Dwi Sartika</td>
+            <td class="alamat">Palimanan</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="nama">Divia Azarine</td>
+            <td class="alamat">Cirebon</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="nama">Annisa Saninah</td>
+            <td class="alamat">Kejaksan</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="nama">Hanifah Nur Aulia</td>
+            <td class="alamat">Sumedang</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+    </table>
+
+    <a href="../index.html">Home</a>
+</div>
+
+<script>
+
+
+        $(document).ready(function(){
+            $('.nama').click(function(){
+                let nama = $(this).text();
+                let tampil_nama = alert('Nama : '+nama);
+                if(!tampil_nama) return;
+            })
+        })
+
+        
+        $(document).ready(function(){
+            $('.alamat').click(function(){
+                let alamat = $(this).text();
+                let tampil_alamat = alert('Alamat : '+alamat);
+                if(!tampil_alamat) return;
+            })
+        })
+
+
+        $(document).ready(function(){
+            $(".btnDelete").on('click', function (){
+                $(this).closest("tr").remove();
+            });
+        });
+
+
+
+</script>
+
+</body>
+</html>
+</body>
+>>>>>>> 63981250649070da5c36b739d026c89c53cf2582
 </html>

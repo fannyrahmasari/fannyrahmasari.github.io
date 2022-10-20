@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
      * {
          margin:0; 
@@ -47,3 +48,54 @@
 
     }
 
+=======
+
+     * {
+         margin:0; 
+         padding:0;
+     }
+
+
+	.container{
+		width:800px;
+		margin:auto;
+	}
+ 
+    nav {
+        margin:auto;
+        text-align: center;
+        width: 100%;
+        font-family: arial;
+		margin-top: 20px;
+    } 
+    
+    nav ul {
+        background:#37988e;
+        padding: 0 20px;
+        list-style: none;
+        position: relative;
+        display: inline-table;
+        width: 100%;
+     }
+
+    nav ul li{
+        float:left;
+    }
+
+    nav ul li:hover{
+        background: white;
+    }
+
+    nav ul li:hover a{
+     	color:#000;
+    }
+
+    nav ul li a{
+     	display: block;
+     	padding: 25px;
+     	color: #fff;
+     	text-decoration: none;
+
+    }
+
+>>>>>>> 63981250649070da5c36b739d026c89c53cf2582
